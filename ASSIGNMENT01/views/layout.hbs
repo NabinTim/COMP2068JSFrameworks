@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}} - My Personal Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Translucent Navbar with Gradient and Blur */
+    .navbar {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    }
+
+    .navbar .nav-link {
+      color: white !important;
+    }
+
+    .navbar .nav-link:hover {
+      color: #ffd700 !important;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <h1 class="display-4" style="display:inline-block;">Min Prasad Timalsina</h1>
+      <nav>
+        <ul class="nav justify-content-start">
+          <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="/aboutme">About Me</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="/projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="/contactme">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    {{{body}}}
+  </main>
+
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>Find me on <a href="https://github.com/NabinTim" class="text-white">GitHub</a> | <a href="https://www.linkedin.com/in/min-prasad-timalsina-2846612b9/" class="text-white">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Home Page Section */
+#home {
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+
+/* About Me Section */
+#aboutme {
+  padding: 50px;
+  background-color: #e9ecef;
+}
+
+/* Projects Section */
+#projects {
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contactme {
+  padding: 50px;
+  background-color: #e9ecef;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.navbar .nav-link {
+  color: white !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ffd700 !important;
+}
