@@ -1,35 +1,66 @@
-/* General Styles */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
+  background-image: url('/images/bg.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-/* Home Page Section */
-#home {
-  padding: 50px;
-  background-color: #f0f0f0;
+main {
+  flex-grow: 1;
 }
 
-/* About Me Section */
-#aboutme {
-  padding: 50px;
-  background-color: #e9ecef;
+footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
 }
 
-/* Projects Section */
-#projects {
+h2 {
+  color: #a49a9a;
+  font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+#home, #projects {
   padding: 50px;
-  background-color: #f0f0f0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(146 79 153 / 70%));
+  border-radius: 1cm;
+}
+
+#aboutme, #contactme {
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(146 79 153 / 70%));
+  border-radius: 1cm;
+  text-align: center;
+}
+
+.display-4 {
+  color: #999999;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card {
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(146 79 153 / 70%));
+  border-radius: 1cm;
 }
 
-/* Contact Section */
-#contactme {
-  padding: 50px;
-  background-color: #e9ecef;
+p {
+  color: #fffbf2;
+  font-style: italic;
 }
 
 form {
@@ -37,11 +68,16 @@ form {
   margin: 0 auto;
 }
 
-/* Navbar Styling */
 .navbar {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+.btn-primary {
+  color: #f5baba;
+  background-color: #618bc845;
+  border-color: #536887;
 }
 
 .navbar .nav-link {
